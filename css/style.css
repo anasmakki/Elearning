@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/* Navbar Start */
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.custom-nav-item:hover{
+    background: #dc3545;
+    border: 1px solid #dc3545;
+    border-radius: 10px;
+}
+
+.custom-nav .custom-nav-item a{
+    color: #fff !important;
+}
+/* Navbar End */
+
+
+/* Start Video Background */
+.remove-vid-marg{
+    margin: 0;
+    padding: 0;
+}
+
+.vid-parent{
+    position: relative;
+}
+
+video{
+    width: 100%;
+}
+
+.vid-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background: #225470;
+    z-index: 1;
+}
+
+.video-content{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    z-index: 2;
+    color: #fff;
+}
+
+/* End Video Background */
+
+/* Text Banner Start */
+
+.txt-banner > .row{
+    color: #fff !important;
+    padding: 10px !important;
+}
+/* Text Banner End */
+
+
+/* Courses Start */
+
+.card-img-top{
+    width: 150px;
+    margin: auto 10px 0px;
+}
+
+/* Courses End */
+
+/* Contact Us start */
+.stripe{
+    background-image:linear-gradient(240deg, #ed213a, #92291e);
+    height: 13rem;
+    padding: 3rem;
+    margin-top: 4rem;
+    transform: rotate(10deg);
+    z-index: -5;
+}
+/* Contact Us End */
+
+
+/* Social Follow Start */
+.social-hover:hover{
+    text-decoration: none;
+    padding: 5px 100px;
+    background: rgb(95, 93, 93);
+}
+/* Social Follow End */
+
+
+
+
+            /* Media Queries */
+@media screen and (max-width:700px){
+    .my-content, .txt-banner {
+        display: none;
+    }
+
+    .video-content{
+        top: 30%;
+        left: 40%;
+    }
+
+    .custom-nav .custom-nav-item a {
+        padding: 10px 20px;
+        background-color: #225470;
+    }
+
+    .custom-nav-item:hover{
+        background-color: none;
+        border: none;
+        border-radius: none;
+    }
+
+}
